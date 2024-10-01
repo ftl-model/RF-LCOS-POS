@@ -15,7 +15,7 @@ scaler = joblib.load('scaler.pkl')
 feature_names = [ "age", " preop_ucg_EF ", "BNP ", " DBIL ", "T3", "UREA", "optime ", " BP_65_time", "Lac_1st_postop"]
 
 ## Streamlit user interface
-st.title("LCOS preoperative model")
+st.title("LCOS postoperative model")
 
 # age: numerical input
 age = st.number_input("Age:", min_value=18, max_value=100, value=60)
